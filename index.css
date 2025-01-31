@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Section Container Styles */
+/* Base styles for section containers */
+.section-container {
+  background-color: indianred;
+  padding: 50px 10%;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute; /* Absolute positioning to stack sections */
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.3s ease, z-index 0s ease 0.3s; /* Smooth transition */
+}
+
+/* Hide inactive sections and overlap active sections */
+.section-container.inactive {
+  opacity: 0;
+  z-index: -1; /* Move inactive sections behind active one */
+}
+
+.section-container.active {
+  opacity: 1;
+  z-index: 1; /* Active section should be on top */
+}
+
+/* General styles for the text and layout */
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.paragraph-container {
+  margin-bottom: 30px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+
+
+/* Scoped styling for PersonalDetails component */
+.personal-details-container {
+  background-color: pink;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.personal-details-container .personal-details-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.personal-details-container .section-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.personal-details-container .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.personal-details-container .input-box {
+  text-align: left;
+}
+
+.personal-details-container .input-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.personal-details-container .input-box label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+.contact-details-container{
+  
+    background-color: orange; /* Orange background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%; /* Adjust width as needed */
+    margin: 50px auto; /* Centering the section */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-details-container{
+    padding: 50px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 80%;
+  min-height: 80%;
+  }
