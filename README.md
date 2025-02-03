@@ -1,4 +1,47 @@
 I have created this small company site and i loved doing this.
+1. Project Title & Description
+Project Name: Company Site
+A React-based web application with seamless section transitions, fixed navigation, and an intuitive user interface.
+
+2. Features
+✅ Fixed Navigation Bar – Stays at the top while switching sections.
+✅ Overlapping Transitions – The previous section remains partially visible.
+✅ Horizontal Scroll Navigation – A small scroll bar for navigating sections.
+✅ Responsive Design – Works smoothly on all devices.
+✅ Interactive Forms – Capture user details and contact information.
+
+3. Technologies Used
+Frontend: React.js, HTML5, CSS3, JavaScript
+Styling: CSS Flexbox, Grid, Media Queries
+State Management: React Hooks (useState)
+4. Folder Structure
+bash
+Copy
+Edit
+/project-root
+│── /src
+│   │── /components
+│   │   ├── Navbar.js
+│   │   ├── OurTeam.js
+│   │   ├── PersonalDetails.js
+│   │   ├── ContactUs.js
+│   │── App.js
+│   │── index.js
+│── /public
+│── /styles
+│   ├── index.css
+│── package.json
+│── README.md
+5. Installation & Setup
+Clone the repository
+sh
+Copy
+Edit
+git clone https://github.com/yourusername/multi-section-webapp.git
+
+Click on navigation buttons to switch sections.
+Use the scrollbar at the bottom to navigate.
+Fill out forms in Personal Details and Contact Us sections.
 Here i have used react.js,HTML AND CSS
 
 
